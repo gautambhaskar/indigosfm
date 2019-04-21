@@ -1,0 +1,75 @@
+body {
+	font-family: 'Rubik', sans-serif;
+	margin-bottom: 0;
+}
+
+.navitem:hover {
+	color: grey;
+}
+
+.navbar-fixed {
+	opacity: 0.9;
+}
+
+.thevideo {
+	height: 300px;
+	width: 100%;
+	background-color: white;
+}
+
+.space {
+	padding: 100px;
+	background-color: #424242;
+	width: 100%;
+}
+
+.video-container {
+	width: 100%;
+	margin: 0;
+}
+
+.reflink {
+	color: white;
+}
+
+.reflink:hover {
+	color: grey;
+}
+
+.reflink {
+	color: white;
+}
+
+.reflink:hover {
+	color: grey;
+}
+.screencover {
+	height: 110vw;
+	width: 100%;
+	position: fixed;
+	background-color: black;
+	animation-name: fadein;
+	animation-duration: 3s;
+	top: -10vw;
+	animation-fill-mode: forwards;
+	animation-delay: 0.5s;
+	animation-timing-function: ease-in;
+	z-index: 3;
+}
+.nav-wrapper {
+	background-color: #25408e;
+}
+@keyframes fadein {
+	0% {opacity: 1;}
+	90%   {opacity: 0;}
+	100% {left: 100vw;}
+}
+.opening_statement {
+	color: white;
+	font-size: 8vw;
+	position: relative;
+	top: 30vw;
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+}

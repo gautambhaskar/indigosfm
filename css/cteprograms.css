@@ -1,0 +1,292 @@
+body {
+	font-family: 'Rubik', sans-serif;
+}
+
+.navitem:hover {
+	color: grey;
+}
+
+.navbar-fixed {
+	opacity: 0.8;
+}
+.videoCover {
+	font-family: 'Raleway', sans-serif;
+}
+.videoCover1 {
+	font-family: 'Raleway', sans-serif;
+}
+.songDownload {
+	background-color: black;
+	float: right;
+	margin-right: 5px;
+	color: white;
+}
+
+.songDownload:hover {
+	background-color: white;
+	color: black;
+}
+
+.thevideo {
+	height: 300px;
+	width: 100%;
+	background-color: white;
+}
+
+.mediaplayer {
+	width: 30%;
+	background-color: #FFD7D3;
+	color: #3D3D3D;
+	border-radius: 4px;
+	margin-right: 5%;
+	float: right;
+}
+.nav-wrapper {
+	background-color: #25408e;
+}
+.mediaplayer1 {
+	width: 30%;
+	background-color: #D2E9FC;
+	color: #3D3D3D;
+	border-radius: 4px;
+	margin-left: 30%;
+	float: left;
+}
+
+.musicinfo {
+	background-color: #EEDBB7;
+	width: 20%;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: absolute;
+	margin-top: 60px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.image {
+	width: 100%;
+	height: 350px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.player {
+	width: 80%;
+	margin: 20px;
+}
+
+.mediacontainer {
+	height: 350px;
+}
+
+.reflink {
+	color: white;
+}
+
+.reflink:hover {
+	color: grey;
+}
+.videoCover {
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	position: absolute;
+	z-index: -1;
+	color: #ffeead;
+	text-align: center;
+	top: 20vw;
+	font-size: 6vw;
+	z-index: 1;
+	font-weight: 600;
+}
+
+#cteVideo {
+	z-index: 0;
+}
+.coverText{
+	text-align: center;
+	font-size: 2vw;
+	padding-left: 10%;
+	padding-right: 10%;
+	color: white;
+	margin-top: 5vw;
+}
+.coverHeader{
+	text-align: center;
+	font-size: 3.5vw;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-weight: 700;
+	color: #ffeead;
+	font-family: 'Exo 2', sans-serif;
+}
+.screencover {
+	height: 110vw;
+	width: 100%;
+	position: fixed;
+	background-color: black;
+	animation-name: fadein;
+	animation-duration: 2s;
+	top: -10vw;
+	animation-fill-mode: forwards;
+	animation-delay: 0.1s;
+	animation-timing-function: ease-in;
+	z-index: 3;
+}
+@keyframes fadein {
+  0% {opacity: 1;}
+	90%   {opacity: 0;}
+	100% {left: 100vw;}
+}
+.box2 {
+	margin-top: -2vw;
+	z-index: 0;
+	position: relative;
+	padding-top: 25vw;
+	padding-bottom: 25vw;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+.box3 {
+	margin-top: -2vw;
+	padding-top: 10vw;
+	padding-bottom: 10vw;
+	z-index: 0;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+.box4 {
+	margin-top: -2vw;
+	padding-top: 25vw;
+	padding-bottom: 25vw;
+	z-index: 0;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+}
+.coverText1{
+	text-align: center;
+	font-size: 1.5vw;
+	padding-left: 3%;
+	padding-right: 72%;
+	color: white;
+	z-index: 0;
+}
+.coverHeader1{
+	text-align: center;
+	font-size: 3vw;
+	padding-left: 3%;
+	padding-right: 62%;
+	font-weight: 700;
+	color: #ffeead;
+	z-index: 0;
+	font-family: 'Exo 2', sans-serif;
+}
+@keyframes textreveal {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes textreveal1 {
+  from { opacity: 0.6; }
+  to { opacity: 1; }
+}
+.videoCover1 {
+	width: 100%;
+	padding-left: 10%;
+	padding-right: 10%;
+	position: relative;
+	top: 33vw;
+	color: #ffeead;
+	text-align: center;
+	font-size: 6vw;
+	z-index: 0;
+	font-weight: 800;
+	font-family: 'Exo 2', sans-serif;
+	animation-name: textreveal;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.videospace:hover .videoCover1{
+	animation-play-state: running;
+}
+.cteVideo1 {
+	z-index: -2;
+	position: relative;
+	width: 100%;
+	height: auto;
+	top: 0vw;
+}
+.videospace {
+	position: relative;
+	height: 65vw;
+	width: 100%;
+	z-index: 0;
+}
+@keyframes move {
+  from { left: -100vw; opacity: 0;}
+  to   { left: 0px; opacity: 1;}
+}
+@keyframes move1 {
+  from { left: 100vw; opacity: 0;}
+  to   { left: 0px; opacity: 1;}
+}
+.exp {
+	position: relative;
+	animation: move 0.3s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.box2:hover .exp {
+	animation-play-state: running;
+}
+.exp1 {
+	position: relative;
+	animation: move1 0.3s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+}
+.box3:hover .exp1 {
+	animation-play-state: running;
+}
+.box2:hover .exp1 {
+	animation-play-state: running;
+}
+.exp3 {
+	position: relative;
+	animation: textreveal1 1s;
+	animation-fill-mode: forwards;
+	animation-play-state: paused;
+	opacity: 0.4;
+}
+.box2:hover .exp3 {
+	animation-play-state: running;
+}
+.box3:hover .exp3 {
+	animation-play-state: running;
+}
+.arrow {
+	z-index: 4;
+	color: white;
+	text-align: center;
+	font-size: 6.5vw;
+	font-weight: 100;
+	opacity: 0.5;
+}
+.down {
+	font-size: 6vw;
+	position: relative;
+	text-align: center;
+	opacity: 1;
+	color: black;
+	animation-name: movement;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes movement {
+	from {top: -12vw; color: white; font-size: 6vw;}
+	to {top: -5vw; color: #ffeead; font-size: 7vw;}
+}

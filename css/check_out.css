@@ -1,0 +1,39 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.navitem:hover {
+    color: grey;
+}
+
+.navbar-fixed {
+    opacity: 0.8;
+}
+
+.reflink {
+    color: white;
+}
+.nav-wrapper {
+	background-color: #25408e;
+}
+.reflink:hover {
+    color: grey;
+}
+
+.Thankyou {
+    background-color: black;
+    color: #cecece;
+    /*border-radius: 10px;*/
+    height: 400px;
+    padding: 50px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+body {
+    background-color: #EEDBB7;
+}
+
+#chkout {
+    color: white;
+}
