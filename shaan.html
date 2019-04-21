@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>INDIGOS SHAAN</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/shaan.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  </head>
+<body>
+  <ul id="dropdown1" class="dropdown-content grey darken-3">
+    <li><a href="abhinav.html" class="white-text">Abhinav</a></li>
+    <li><a href="shaan.html" class="white-text">Shaan</a></li>
+    <li><a href="mathew.html" class="white-text">Mathew</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content grey darken-3">
+    <li><a href="tsachapter.html" class="white-text">TSA Chapter</a></li>
+    <li><a href="cteprograms.html" class="white-text">CTE Programs</a></li>
+  </ul>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+        <a href="index.html" class="brand-logo" style="margin-left: 1vw">INDIGOS</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="dropdown-trigger navitem" href="#!" data-target="dropdown2">Our School<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="shows.html" class="waves-light navitem">Shows</a></li>
+          <li><a href="music.html" class="navitem">Music</a></li>
+          <li><a href="merch.html" class="navitem">Merch</a></li>
+          <li><a class="dropdown-trigger navitem" href="#!" data-target="dropdown1">Members<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class = "screencover"></div>
+  <div width=100%>
+    <div class = "slider center-align fullscreen">
+      <ul class = "slides">
+        <li>
+          <img src = "images/shaan3.png">
+        </li>
+        <li>
+          <img src="images/shaan2.png">
+          <div class = "caption left-align"></div>
+        </li>
+        <li>
+          <img src="images/shaan.jpg">
+          <div class = "caption right-align"></div>
+        </li>
+        <li>
+          <img src="images/shaan4.png">
+          <div class = "caption right-align"></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class = "textarea">
+  <h1 class = "center-align">SHAAN</h1>
+    <div>
+      <p class = "center-align member-text">Shaan Jani, or LilShaan, is a rapper in the INDIGOS. He enjoys writing more melodic raps with an emphasis on substantive, meaningful lyrics. Shaan and Mat's contrasting rap styles adds diversity to the INDIGOS lineup making it one of the most interesting rap groups in history. In addition to being a song writer and rapper with Mat, Shaan plays the guitar and is the lead instrumentalist of the INDIGOS.  </p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".dropdown-trigger").dropdown({hover : true});
+      $(".slider").slider({indicators : false});
+      $('.parallax').parallax();
+       $('.slider').slider();
+    });
+  </script>
+</body>
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">INDIGOS</h5>
+        <p class="grey-text text-lighten-4">Dallas, TX</p>
+        <p class="grey-text text-lighten-4 left" href="#!">Website built with support of FloMo TSA</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="reflink" href="https://www.spotify.com">Spotify</a></li>
+          <li><a class="reflink" href="https://soundcloud.com/the-indigos-868778755">SoundCloud</a></li>
+          <li><a class="reflink" href="https://www.instagram.com">Instagram</a></li>
+          <li><a class="reflink" href="https://twitter.com">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2019 INDIGOS
+    <p class="grey-text text-lighten-4 right" href="#!">Code by John, Sloan, Abhinav, and Gautam</p>
+    </div>
+  </div>
+</footer>
+</html>

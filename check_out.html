@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>INDIGOS MERCH</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/check_out.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+  </head>
+  <script>
+    function validateInput() {
+      var name = document.getElementById("name").value;
+      var contactNumber = document.getElementById("contactNumber").value;
+      var checkout = document.getElementById("chkout");
+
+      if (name !== "" && contactNumber.match(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/m)) {
+        checkout.disabled = false;
+        checkout.classList.remove("disabled");
+      } else {
+        checkout.disabled = true;
+        checkout.classList.add("disabled");
+      }
+    }
+    document.addEventListener("DOMContentLoaded", validateInput);
+  </script>
+<body>
+  <ul id="dropdown1" class="dropdown-content grey darken-3">
+    <li><a href="abhinav.html" class="white-text">Abhinav</a></li>
+    <li><a href="shaan.html" class="white-text">Shaan</a></li>
+    <li><a href="mathew.html" class="white-text">Mathew</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content grey darken-3">
+    <li><a href="tsachapter.html" class="white-text">TSA Chapter</a></li>
+    <li><a href="cteprograms.html" class="white-text">CTE Programs</a></li>
+  </ul>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+        <a href="index.html" class="brand-logo" style="margin-left: 1vw">INDIGOS</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="dropdown-trigger navitem" href="#!" data-target="dropdown2">Our School<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="shows.html" class="waves-light navitem">Shows</a></li>
+          <li><a href="music.html" class="navitem">Music</a></li>
+          <li><a href="merch.html" class="navitem">Merch</a></li>
+          <li><a class="dropdown-trigger navitem" href="#!" data-target="dropdown1">Members<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="Thankyou card">
+    <form action="success.html" method="GET">
+      <h1 class="center-align">Check Out</h1>
+      <p>Name:</p>
+      <input id="name" style="color: white; width: 30%; float: left; margin-right: 30%;" oninput="validateInput()">
+      <p style="float: left; margin-right: 70%;">Contact Number:</p>
+      <input id="contactNumber" style="color: white; width: 30%; float: left; margin-right: 30%;" oninput="validateInput()">
+      <input disabled type="submit" id="chkout" cmd=_xclick  value="Check Out" class="btn disabled" style="float: left; margin-left: 10%; width: 10%; padding: 2px; text-align: center;">
+    </form>
+
+
+  </div>
+  <script>
+    $(document).ready(function(){
+      $(".dropdown-trigger").dropdown({hover : true});
+      $('.parallax').parallax();
+       $('.slider').slider({duration: 50});
+    });
+  </script>
+</body>
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">INDIGOS</h5>
+        <p class="grey-text text-lighten-4">Dallas, TX</p>
+        <p class="grey-text text-lighten-4 left" href="#!">Website built with support of FloMo TSA</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="reflink" href="https://www.spotify.com">Spotify</a></li>
+          <li><a class="reflink" href="https://soundcloud.com/the-indigos-868778755">SoundCloud</a></li>
+          <li><a class="reflink" href="https://www.instagram.com">Instagram</a></li>
+          <li><a class="reflink" href="https://twitter.com">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2019 INDIGOS
+    <p class="grey-text text-lighten-4 right" href="#!">Code by John, Sloan, Abhinav, and Gautam</p>
+    </div>
+  </div>
+</footer>
+</html>

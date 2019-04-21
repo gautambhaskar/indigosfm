@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>INDIGOS MERCH</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/merch.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+  </head>
+  <script>
+  var total = 0.00;
+  var items = 0;
+
+    function addvalue(value,item){
+      total += value;
+      document.getElementById("cart").innerHTML = "Cart Total: $" + total;
+      var ul = document.getElementById("itemlist");
+      var li = document.createElement("li");
+      li.appendChild(document.createTextNode(item + " - $" + value));
+      var name, arr;
+      name = "cartitem";
+      items += 1;
+      li.setAttribute("id","item" + items)
+      arr = li.className.split(" ");
+      if (arr.indexOf(name) == -1) {
+        li.className += " " + name;
+      }
+      ul.appendChild(li);
+      checklist()
+    }
+    var z = document.getElementsByClassName("cartitem")
+
+    function clearcart() {
+      total = 0.00;
+      document.getElementById("itemlist").innerHTML = "";
+      document.getElementById("cart").innerHTML = "Cart Total: $" + total;
+      items = 0;
+      checklist()
+    }
+    function toggle_cart() {
+      var x = document.getElementById("cartlist");
+      var y = document.getElementById("itemlist")
+      if (x.style.display === "block") {
+        x.style.display = "none";
+        y.style.display = "none";
+
+
+      } else {
+        x.style.display = "block";
+        y.style.display = "block";
+
+      }
+    }
+    function checklist() {
+      if (items == 0) {
+        document.getElementById("chkoutlink").href = "javascript: void(0)";
+        document.getElementsByClassName("check_out")[0].classList.add("disabled")
+      } else {
+        document.getElementById("chkoutlink").href = "check_out.html";
+        document.getElementsByClassName("check_out")[0].classList.remove("disabled")
+      }
+    }
+    function checkout() {
+      if(items === 0) {
+        alert("Add Items to Your Cart before Checking Out...")
+      }
+    }
+  </script>
+<body>
+  <ul id="dropdown1" class="dropdown-content grey darken-4">
+    <li><a href="abhinav.html" class="white-text">Abhinav</a></li>
+    <li><a href="shaan.html" class="white-text">Shaan</a></li>
+    <li><a href="mathew.html" class="white-text">Mathew</a></li>
+  </ul>
+  <ul id="dropdown2" class="dropdown-content grey darken-4">
+    <li><a href="tsachapter.html" class="white-text">TSA Chapter</a></li>
+    <li><a href="cteprograms.html" class="white-text">CTE Programs</a></li>
+  </ul>
+  <div class = "navbar-fixed">
+    <nav>
+      <div class="nav-wrapper grey darken-4">
+        <a href="index.html" class="brand-logo" style="margin-left: 1vw">INDIGOS</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a class="dropdown-trigger navitem grey darken-4" href="#!" data-target="dropdown2">Our School<i class="material-icons right">arrow_drop_down</i></a></li>
+          <li><a href="shows.html" class="navitem">Shows</a></li>
+          <li><a href="music.html" class = "navitem">Music</a></li>
+          <li><a href = "merch.html" class = "navitem">Merch</a></li>
+          <li><a class="dropdown-trigger navitem grey darken-4" href="#!" data-target="dropdown1">Members<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class = "screencover"></div>
+  <div class="parallax-container">
+    <div class="parallax" style = "height: 700px;"><img src="images/para1.jpg"></div>
+  </div>
+  <div class="section z-depth-5" style = "background-color: rgb(245.245,246);">
+    <div class = "row">
+      <h1 class = "black-text center-align" style = "font-weight: 1000;">MERCH</h1>
+        <button onclick = "document.location.href='check_out.html'" class = "check_out disabled hoverable btn" id = "chkoutlink" onclick = "checkout()">CHECK OUT</button>
+      <div class = "cartarea">
+      <div class = "cart1 card hoverable">
+        <p id = "cart">Cart Total:</p>
+      </div>
+      <div class = "clear_cart card hoverable" onclick="clearcart()">
+        <i class = "material-icons">remove_shopping_cart</i>
+      </div>
+      <div class = "open_cart card hoverable" onclick="toggle_cart()">
+        <i class = "material-icons">shopping_cart</i>
+      </div>
+      <div class = "card hoverable" id = "cartlist">
+        <ul id = "itemlist">
+        </ul>
+      </div>
+      </div>
+      <div class = "saleItem1 card hoverable">
+        <div><img class = "saleImage" src = "images/shortSleeveShirt.png"></div>
+        <div class = "saleData"><p class = "saleHeader">Short Sleeve Shirt<br><p class = "saleCost">$9.99</span></p><br><div class = "add_to_cart btn waves-effect waves-light" onclick="addvalue(9.99,'Short Sleeve')"><p style="margin-top: 0px;">Add to Cart</p></div></div>
+      </div>
+      <div class = "saleItem1 card hoverable">
+        <div><img class = "saleImage" src = "images/longSleeveShirt.png"></div>
+        <div class = "saleData"><p class = "saleHeader">Long Sleeve Shirt<br><p class = "saleCost">$12.99</span></p><br><div class = "add_to_cart btn waves-effect waves-light" onclick="addvalue(12.99,'Long Sleeve')"><p style="margin-top: 0px;">Add to Cart</p></div></div>
+      </div>
+      <div class = "saleItem1 card hoverable">
+        <div><img class = "saleImage" src = "images/tankTop.png"></div>
+        <div class = "saleData"><p class = "saleHeader">Tank Top<br><p class = "saleCost">$6.99</span></p><br><div class = "add_to_cart btn waves-effect waves-light" onclick="addvalue(6.99,'Tank Top')"><p style="margin-top: 0px;">Add to Cart</p></div></div>
+      </div>
+      <div class = "saleItem1 card hoverable">
+        <div><img class = "saleImage" src = "images/mug.png"></div>
+        <div class = "saleData"><p class = "saleHeader">Mug<br><p class = "saleCost">$2.99</span></p><br><div class = "add_to_cart btn waves-effect waves-light" onclick="addvalue(2.99,'Mug')"><p style="margin-top: 0px;">Add to Cart</p></div></div>
+      </div>
+      <div class = "saleItem1 card hoverable">
+        <div><img class = "saleImage" src = "images/baseBallHat.png"></div>
+        <div class = "saleData"><p class = "saleHeader">Baseball Cap<br><p class = "saleCost">$6.99</span></p><br><div class = "add_to_cart btn waves-effect waves-light" onclick="addvalue(7.99,'Baseball Cap')"><p style="margin-top: 0px;">Add to Cart</p></div></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".dropdown-trigger").dropdown({hover : true});
+      $('.parallax').parallax();
+    });
+  </script>
+</body>
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">INDIGOS</h5>
+        <p class="grey-text text-lighten-4">Dallas, TX</p>
+        <p class="grey-text text-lighten-4 left" href="#!">Website built with support of FloMo TSA</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="reflink" href="https://www.spotify.com">Spotify</a></li>
+          <li><a class="reflink" href="https://soundcloud.com/the-indigos-868778755">SoundCloud</a></li>
+          <li><a class="reflink" href="https://www.instagram.com">Instagram</a></li>
+          <li><a class="reflink" href="https://twitter.com">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2019 INDIGOS
+    <p class="grey-text text-lighten-4 right" href="#!">Code by John, Sloan, Abhinav, and Gautam</p>
+    </div>
+  </div>
+</footer>
+</html>
