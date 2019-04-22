@@ -273,6 +273,16 @@ body {
 .box3:hover .exp3 {
 	animation-play-state: running;
 }
+#engbox {
+	padding: 7vw!important;
+}
+#lastbox {
+	padding-top: 7vw!important;
+	padding-bottom: 7vw!important;
+}
+.a {
+	padding: 3vw!important;
+}
 .arrow {
 	z-index: 4;
 	color: white;

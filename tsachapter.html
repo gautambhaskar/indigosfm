@@ -44,10 +44,27 @@
   </div>
   </div>
   <img src = "images/tsa.jpg" style = "height: auto; width: 100%; opacity: 0.7; position: fixed; z-index: -2;">
-  <div STYLE = "height: 50vw;"></div>
-    <div>
+  <div style = "height: 50vw;"></div>
+    <div style = "margin-bottom: -10vw;">
     <h1 align=center class = "coverText">Our TSA Chapter<br><br><i class="material-icons down">keyboard_arrow_down</i></h1>
     </div>
+    <div class = "box" style = "background-color: #aab6fe;">
+      <h3 class = "boxHeader hidden2">Our Motto</h3>
+      <p class = "boxText hidden">The goal of the Flower Mound High School TSA chapter is to inspire curiosity and a drive for learning in students who aspire to excel in the STEM field. </p>
+    </div>
+    <div class = "box" style = "background-color: #7986cb">
+      <h3 class = "boxHeader hidden2">Competitions</h3>
+      <p class = "boxText hidden">Flower Mound HS hosts an annual competition to decide which students will attend the state TSA competition. Because FMHS students are ambitious and goal-oriented, this competition is designed to push the boundaries of their fantastic creations.</p>
+    </div>
+    <div class = "box" style = "background-color: #49599a">
+      <h3 class = "boxHeader hidden2">Community Action</h3>
+      <p class = "boxText hidden">Our community's well-being is of utmost importance to these passionate students. In December, the webmaster team visited the Boy’s and Girl’s club in Lake Dallas to showcase some of the past and present TSA projects in hopes of sparking an interest in STEM with the club members.</p>
+    </div>
+    <div class = "box" style = "background-color: #26418f">
+      <h3 class = "boxHeader hidden 2">Longevity</h3>
+      <p class = "boxText hidden">The prolonged excellence of the FMHS TSA chapter serves as a source of inspiration for current students to draw from. Often, Flower Mound places near the top in most individual and school-based TSA categories. Such strong dedication to the field allows this webmaster team and our peers to prosper and learn.<p>
+    </div>
+
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script>
@@ -56,7 +73,64 @@
       $('.parallax').parallax();
        $('.slider').slider();
     });
-
+    var animateHTML = function() {
+      var elems;
+      var windowHeight;
+      function init() {
+        elems = document.querySelectorAll('.hidden');
+        windowHeight = window.innerHeight;
+        addEventHandlers();
+        checkPosition();
+    }
+    function addEventHandlers() {
+      window.addEventListener('scroll', checkPosition);
+      window.addEventListener('resize', init);
+    }
+    function checkPosition() {
+      for (var i = 0; i < elems.length; i++) {
+        var positionFromTop = elems[i].getBoundingClientRect().top;
+        if (positionFromTop - windowHeight <= 0) {
+          elems[i].className = elems[i].className.replace(
+            'hidden',
+            'animate'
+          );
+        }
+      }
+    }
+    return {
+      init: init
+    };
+  };
+  animateHTML().init();
+  var animateHTML = function() {
+    var elems;
+    var windowHeight;
+    function init() {
+      elems = document.querySelectorAll('.hidden2');
+      windowHeight = window.innerHeight;
+      addEventHandlers();
+      checkPosition();
+  }
+  function addEventHandlers() {
+    window.addEventListener('scroll', checkPosition);
+    window.addEventListener('resize', init);
+  }
+  function checkPosition() {
+    for (var i = 0; i < elems.length; i++) {
+      var positionFromTop = elems[i].getBoundingClientRect().top;
+      if (positionFromTop - windowHeight <= 0) {
+        elems[i].className = elems[i].className.replace(
+          'hidden2',
+          'animate2'
+        );
+      }
+    }
+  }
+  return {
+    init: init
+  };
+};
+animateHTML().init();
  </script>
 </body>
 <footer class="page-footer grey darken-4">

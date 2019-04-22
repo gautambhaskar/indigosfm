@@ -151,7 +151,7 @@ h1 {
 .cartarea{
 	position: fixed;
 	z-index: 3;
-	top: 5vw;
+	top: 10vw;
 	margin-left: 1vw;
 }
 #cartlist {

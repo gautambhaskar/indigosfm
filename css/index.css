@@ -16,7 +16,10 @@ body {
 	width: 100%;
 	background-color: white;
 }
-
+.songDownload:hover {
+	background-color: white;
+	color: black;
+}
 .space {
 	padding: 100px;
 	background-color: #424242;
@@ -58,6 +61,12 @@ body {
 }
 .nav-wrapper {
 	background-color: #25408e;
+}
+.songDownload {
+	background-color: black;
+	float: right;
+	margin-right: 5px;
+	color: white;
 }
 @keyframes fadein {
 	0% {opacity: 1;}

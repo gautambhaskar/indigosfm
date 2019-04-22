@@ -142,6 +142,50 @@ body {
 	z-index: 3;
 	font-weight: 400;
 }
+.box {
+	position: static;
+	color: white;
+	text-align: center;
+	padding: 4vw;
+}
+.boxText {
+	color: white;
+	position: relative;
+	font-size: 1.5vw;
+	font-weight: 400;
+}
+.animate {
+	animation-name: arrive;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+.hidden {
+	opacity: 0;
+}
+.boxHeader {
+	color: white;
+	font-size: 3vw;
+	font-weight: 700;
+
+}
+.hidden2 {
+	opacity: 0.4;
+}
+.animate2 {
+	animation-name: appear;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+@keyframes arrive {
+	0% {opacity: 0; left: 200vw;}
+	70% {opacity: 0.5; left: 0vw;}
+	100% {opacity: 0.8; left: 0vw;}
+
+}
+@keyframes appear {
+	from {opacity: 0.2;}
+	to {opacity: 1;}
+}
 @keyframes fadein {
 	0% {opacity: 1;}
 	90%   {opacity: 0;}
@@ -162,7 +206,8 @@ body {
 }
 .down {
 	font-size: 6vw;
-	position: relative;
+	position: absolute;
+	z-index: 3;
 	text-align: center;
 	color: black;
 	animation-name: movement;
@@ -170,6 +215,6 @@ body {
 	animation-iteration-count: infinite;
 }
 @keyframes movement {
-	from {top: -5vw; color: black; font-size: 6vw;}
-	to {top: 3vw; color: white; font-size: 7vw;}
+	from {top: 10vw; color: black; font-size: 6vw;}
+	to {top: 15vw; color: white; font-size: 7vw;}
 }
