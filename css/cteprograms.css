@@ -190,7 +190,7 @@ body {
   to { opacity: 1; }
 }
 @keyframes textreveal1 {
-  from { opacity: 0.6; }
+  from { opacity: 0.2; }
   to { opacity: 1; }
 }
 .videoCover1 {
@@ -207,9 +207,11 @@ body {
 	font-family: 'Exo 2', sans-serif;
 	animation-name: textreveal;
 	animation-duration: 2s;
+	animation-timing-function: ease-in;
 	animation-fill-mode: forwards;
-	animation-play-state: paused;
+
 }
+
 .videospace:hover .videoCover1{
 	animation-play-state: running;
 }
@@ -219,6 +221,9 @@ body {
 	width: 100%;
 	height: auto;
 	top: 0vw;
+}
+.hidden1 {
+	opacity: 0;
 }
 .videospace {
 	position: relative;
@@ -236,18 +241,17 @@ body {
 }
 .exp {
 	position: relative;
-	animation: move 0.3s;
+	animation: move 2s;
 	animation-fill-mode: forwards;
-	animation-play-state: paused;
 }
 .box2:hover .exp {
 	animation-play-state: running;
 }
 .exp1 {
 	position: relative;
-	animation: move1 0.3s;
+	animation: move1 2s;
 	animation-fill-mode: forwards;
-	animation-play-state: paused;
+
 }
 .box3:hover .exp1 {
 	animation-play-state: running;
@@ -257,10 +261,11 @@ body {
 }
 .exp3 {
 	position: relative;
-	animation: textreveal1 1s;
+	animation: textreveal1 2.5s;
 	animation-fill-mode: forwards;
-	animation-play-state: paused;
-	opacity: 0.4;
+}
+.hidden2 {
+	opacity: 0;
 }
 .box2:hover .exp3 {
 	animation-play-state: running;
@@ -272,9 +277,15 @@ body {
 	z-index: 4;
 	color: white;
 	text-align: center;
-	font-size: 6.5vw;
-	font-weight: 100;
+	font-size: 4vw;
+	font-weight: 800;
 	opacity: 0.5;
+}
+.hidden {
+	opacity: 0;
+}
+.hidden3 {
+	opacity: 0.4;
 }
 .down {
 	font-size: 6vw;
@@ -287,6 +298,6 @@ body {
 	animation-iteration-count: infinite;
 }
 @keyframes movement {
-	from {top: -12vw; color: white; font-size: 6vw;}
-	to {top: -5vw; color: #ffeead; font-size: 7vw;}
+	from {top: -12vw; color: #ffeead; font-size: 5vw;}
+	to {top: -5vw; color: #ffeead; font-size: 5vw;}
 }
