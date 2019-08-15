@@ -14,6 +14,7 @@ A website about a school-based rap group known as the INDIGOS. Website includes 
 
 ## Competition
 Submit to TSA Texas State Competition along with the FloMo TSA Website.
+
 FloMo TSA Repository: https://github.com/gautambhaskar/flomotsa
 
 Finished Texas State Competition in 4th place.
