@@ -1,5 +1,5 @@
 # INDIGOS Website
-A website about the TSA Chapter at Flower Mound High School designed by 3 team members and I. 
+A website built for a school-based rap group called the INDIGOS. 
 
 ## Frameworks
 Built with Materialize CSS and direct HTML. 
@@ -10,10 +10,12 @@ Built with Materialize CSS and direct HTML.
 - JetBlack011
 
 ## Content
-It is essentially a website about the FloMo TSA Chapter and Flower Mound HS. 
+A website about a school-based rap group known as the INDIGOS. Website includes the group's members' profiles, schedule, mock tickets, mock merchandise, and song clips.
 
-### NOTE: 
-This Website was an overnight build by me to fulfill a newly found regulation the day before the competition. 
-The regulation required this website to complement the INDIGOS TSA Website in the 'indigosfm' Repository
-https://github.com/gautambhaskar/indigosfm
+## Competition
+Submit to TSA Texas State Competition along with the FloMo TSA Website.
+FloMo TSA Repository: https://github.com/gautambhaskar/flomotsa
+
+Finished Texas State Competition in 4th place.
+
 
